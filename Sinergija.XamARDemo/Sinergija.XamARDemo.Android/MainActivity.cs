@@ -14,6 +14,8 @@ namespace Sinergija.XamARDemo.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            XamAR.WorldForms.Init(this, savedInstanceState);
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
